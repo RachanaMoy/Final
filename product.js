@@ -1,9 +1,5 @@
 const productsContainer = document.getElementById("productsContainer");
-
-// Load products from localStorage
 let products = JSON.parse(localStorage.getItem("products")) || [];
-
-// Render products
 function renderProducts() {
   productsContainer.innerHTML = "";
 
@@ -30,8 +26,6 @@ function renderProducts() {
 
     productsContainer.appendChild(productCard);
   });
-
-  // Add event listeners for edit and delete buttons
   document
     .querySelectorAll(".edit-btn")
     .forEach((btn) => btn.addEventListener("click", handleEdit));
@@ -40,8 +34,6 @@ function renderProducts() {
     .querySelectorAll(".delete-btn")
     .forEach((btn) => btn.addEventListener("click", handleDelete));
 }
-
-// Delete product
 function handleDelete(e) {
   const id = Number(e.target.dataset.id);
   if (confirm("Are you sure you want to delete this product?")) {
@@ -50,14 +42,10 @@ function handleDelete(e) {
     renderProducts();
   }
 }
-
-// Edit product (redirect to form with product info)
 function handleEdit(e) {
   const id = Number(e.target.dataset.id);
   // Save id to localStorage to edit later
   localStorage.setItem("editProductId", id);
   window.location.href = "index.html";
 }
-
-// Initial render
 renderProducts();
