@@ -1,0 +1,136 @@
+/* General Styling */
+body {
+  font-family: "Montserrat", sans-serif;
+  background: #f8f9fa;
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+/* Heading */
+h2 {
+  font-weight: 600;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #212529;
+}
+
+/* Form Container */
+.form-container {
+  background: #fff;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  transition: box-shadow 0.3s ease;
+}
+
+.form-container:hover {
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+}
+
+/* Form Inputs */
+label {
+  font-weight: 600;
+  color: #495057;
+}
+
+input,
+textarea,
+select {
+  border-radius: 8px;
+  border: 1.8px solid #ced4da;
+  padding: 12px 15px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: #0d6efd;
+  box-shadow: 0 0 8px rgba(13, 110, 253, 0.3);
+}
+
+/* Button */
+.btn-primary {
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 12px 0;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 12px rgba(13, 110, 253, 0.25);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0b5ed7;
+  box-shadow: 0 6px 18px rgba(11, 94, 215, 0.4);
+}
+
+/* Link Button */
+.link-btn {
+  margin-top: 18px;
+  display: block;
+  text-align: center;
+  color: #0d6efd;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.link-btn:hover {
+  color: #0b5ed7;
+  text-decoration: underline;
+}
+
+/* Product Cards */
+.product-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 30px;
+  transition: box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+}
+
+.product-image {
+  max-width: 100%;
+  height: 180px;
+  object-fit: contain;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.product-name {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #0d6efd;
+}
+
+.product-price {
+  font-weight: 600;
+  color: #198754;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.product-desc {
+  font-size: 0.95rem;
+  color: #495057;
+  margin-bottom: 15px;
+  min-height: 50px;
+}
+
+.btn-sm {
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 6px 12px;
+  margin-right: 8px;
+  transition: background-color 0.3s ease;
+}
